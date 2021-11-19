@@ -22,7 +22,7 @@ const Service = () => {
                         <img src={rail} alt="" />
                      </div>
                      <h3>Rail Booking</h3>
-                     <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam <br /> Sorem ipsum dolor consectur adipisicing elit.</p>
+                     <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam.</p>
                   </div>
                </div>
                <div className="col-lg-4 col-md-6">
@@ -31,7 +31,7 @@ const Service = () => {
                         <img src={hotel} alt="" />
                      </div>
                      <h3>Hotel Booking</h3>
-                     <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam <br /> Sorem ipsum dolor consectur adipisicing elit.</p>
+                     <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam.</p>
                   </div>
                </div>
                <div className="col-lg-4 col-md-6">
@@ -40,7 +40,7 @@ const Service = () => {
                         <img src={flight} alt="" />
                      </div>
                      <h3>Flight Booking</h3>
-                     <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam <br /> Sorem ipsum dolor consectur adipisicing elit.</p>
+                     <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam.</p>
                   </div>
                </div>
             </div>

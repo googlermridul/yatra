@@ -47,3 +47,7 @@ function App() {
 }
 
 export default App;
+
+// Live link: https://yatramein.web.app/
+// client side code: https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-googlermridul
+// server side code: https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-googlermridul

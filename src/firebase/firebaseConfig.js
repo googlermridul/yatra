@@ -1,10 +1,10 @@
 const firebaseConfig = {
-   apiKey: "AIzaSyBcUo34wXUJ3HYer4VhUhZBhX6kj2Izv94",
-   authDomain: "helpooo.firebaseapp.com",
-   projectId: "helpooo",
-   storageBucket: "helpooo.appspot.com",
-   messagingSenderId: "163984401657",
-   appId: "1:163984401657:web:921556887f063ead416e28"
+   apiKey: "AIzaSyDbyloX4s9AVB7nztbNGKGfce-Vr4uzzBI",
+   authDomain: "yatramein.firebaseapp.com",
+   projectId: "yatramein",
+   storageBucket: "yatramein.appspot.com",
+   messagingSenderId: "25159018669",
+   appId: "1:25159018669:web:45f634e5d6e172eae47e24"
 };
 
 export default firebaseConfig;
