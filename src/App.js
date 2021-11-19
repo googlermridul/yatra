@@ -1,24 +1,48 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from './components/Pages/Home';
+import NotFound from './components/Pages/NotFound';
+import Header from './components/Pages/Header';
+import Footer from './components/Pages/Footer';
+import AboutPage from './components/Pages/AboutPage';
+import CampaignDetails from './components/Pages/CampaignDetails';
+import Login from './components/Pages/Login';
+import AuthProvider from './contexts/AuthProvider';
+import Register from './components/Pages/Register';
+import PrivateRoute from './components/Pages/PrivateRoute';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthProvider>
+      <Router>
+        <Header />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="/about">
+            <AboutPage />
+          </Route>
+          <PrivateRoute path="/campaign/:campaignId">
+            <CampaignDetails />
+          </PrivateRoute>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/register">
+            <Register />
+          </Route>
+          <Route path="*">
+            <NotFound />
+          </Route>
+        </Switch>
+        <Footer />
+      </Router>
+    </AuthProvider>
   );
 }
 
