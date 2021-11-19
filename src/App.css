@@ -16,8 +16,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #333;
 }
 h2 {
-  font-size: 32px !important;
-  font-weight: 700 !important;
+  font-size: 30px !important;
+  font-weight: 600 !important;
 }
 h3 {
   font-size: 22px !important;
@@ -152,52 +152,61 @@ h4 {
   margin-top: 100px;
 }
 
-/* CAMPAIGN SECTION */
-.campaign-section {
+/* tour SECTION */
+.tour-section {
   background: #f5fdff;
   padding-top: 100px;
   padding-bottom: 85px;
   margin-bottom: 100px;
 }
-.campaign-box {
-  cursor: pointer;
+.tour-box {
+  background: #fff;
+  margin: 15px 0;
 }
-.campaign-box .img-box {
+.tour-box .img-box {
   overflow: hidden;
-  border-radius: 5px;
 }
-.campaign-box .img-box img {
+.tour-box .img-box img {
   transition: .3s;
 }
-.campaign-box:hover > .img-box img {
+.tour-box:hover > .img-box img {
   transform: scale(1.1);
 }
-.campaign-box .info {
-  padding: 30px;
-  padding-top: 15px;
-  text-align: center;
+.tour-box .info {
+  padding: 15px;
 }
-.campaign-box .date-place {
+.tour-box .price {
   color: #6abe45;
+  margin-bottom: 0;
+}
+.tour-box .date {
+  font-size: 14px;
+  color: #666;
+  font-weight: normal;
+}
+.tour-box .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.campaign-details {
+.tour-details {
   margin-top: 100px;
 }
 
 
-.campaign-details .description {
+.tour-details .description {
   margin: 30px 0;
   /* font-size: 18px; */
 }
-.campaign-details .date-place {
+.tour-details .date-place {
   color: #f77d5c;
   margin: 15px 0;
 }
-.campaign-details .fa-icon {
+.tour-details .fa-icon {
   margin-right: 10px;
 }
-.campaign-details .btn-yatra {
+.tour-details .btn-yatra {
   margin-top: 15px;
 }
 
@@ -341,5 +350,8 @@ h4 {
   }
   .collapse .btn-yatra {
     margin-top: 15px;
+  }
+  .home-banner {
+    margin-top: 83px;
   }
 }

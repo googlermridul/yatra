@@ -1,25 +1,25 @@
 import React, { useEffect, useState } from 'react';
-import useCampaigns from '../../hooks/useCampaigns';
+import useTours from '../../hooks/useTours';
 import { useParams } from 'react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt, faCalendar } from '@fortawesome/free-solid-svg-icons'
 
-const CampaignDetails = () => {
-   const [campaigns] = useCampaigns()
+const TourDetails = () => {
+   const [tours] = useTours()
    const [details, setDetails] = useState({})
-   const {campaignId} = useParams()
+   const {tourId} = useParams()
    
    useEffect(() => {
-      if (campaigns.length > 0) {
-         const matchedData = campaigns.find(detail => detail.id === parseInt(campaignId))
+      if (tours.length > 0) {
+         const matchedData = tours.find(detail => detail.id === parseInt(tourId))
          setDetails(matchedData);
       }
-   }, [campaigns])
+   }, [tours])
 
    const {image, name, date, place, description} = details;
 
    return (
-      <div className="campaign-details">
+      <div className="tour-details">
          <div className="about-bg">
             <div className="container">
                <div className="row align-items-center">
@@ -38,7 +38,7 @@ const CampaignDetails = () => {
                         <p className="date-place">
                            <FontAwesomeIcon className="fa-icon" icon={faCalendar} /> {date}
                         </p>
-                        <button className="btn-yatra">Join Campaign</button>
+                        <button className="btn-yatra">Join Tour</button>
                      </div>
                   </div>
                </div>
@@ -48,4 +48,4 @@ const CampaignDetails = () => {
    );
 };
 
-export default CampaignDetails;
+export default TourDetails;

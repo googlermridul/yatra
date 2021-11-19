@@ -1,6 +1,6 @@
 import React from 'react';
 import About from './About';
-import CampaignSection from './CampaignSection';
+import TourSection from './TourSection';
 import HomeBanner from './HomeBanner';
 import Service from './Service';
 
@@ -10,7 +10,7 @@ const Home = () => {
          <HomeBanner></HomeBanner>
          <Service></Service>
          {/* <About></About> */}
-         <CampaignSection></CampaignSection>
+         <TourSection></TourSection>
       </>
    );
 };

@@ -34,7 +34,7 @@ const Service = () => {
                      <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam.</p>
                   </div>
                </div>
-               <div className="col-lg-4 col-md-6">
+               <div className="col-lg-4 col-md-6 mx-auto">
                   <div className="service-box">
                      <div className="img-box">
                         <img src={flight} alt="" />

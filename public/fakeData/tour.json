@@ -1,0 +1,56 @@
+[
+   {
+      "id": 1,
+      "image": "https://i.ibb.co/hC1fpn2/pexels-g-darshan-10260117.jpg",
+      "name": "Jammu & Kashmir",
+      "date": "2 days 3 nights",
+      "place": "Jammu & Kashmir",
+      "price": 550,
+      "description": "Jammu and Kashmir was a region formerly administered by India as a state from 1954 to 2019, constituting the southern and southeastern portion of the larger Kashmir region, which has been the subject of a dispute between India, Pakistan and China since the mid-20th century."
+   },
+   {
+      "id": 2,
+      "image": "https://i.ibb.co/PCXJ3PG/pexels-abhishek-gaurav-1305603.jpg",
+      "name": "Ladakh",
+      "date": "2 days 3 nights",
+      "place": "Ladakh",
+      "price": 550,
+      "description": "Ladakh is a region administered by India as a union territory, and constitutes a part of the larger Kashmir region, which has been the subject of dispute between India, Pakistan, and China since 1947."
+   },
+   {
+      "id": 3,
+      "image": "https://i.ibb.co/tPpg7sN/pexels-alexandr-podvalny-2166553.jpg",
+      "name": "Bali",
+      "date": "2 days 3 nights",
+      "place": "Bali",
+      "price": 550,
+      "description": "Bali is a province of Indonesia and the westernmost of the Lesser Sunda Islands. East of Java and west of Lombok, the province includes the island of Bali and a few smaller neighbouring islands, notably Nusa Penida, Nusa Lembongan, and Nusa Ceningan."
+   },
+   {
+      "id": 4,
+      "image": "https://i.ibb.co/kKDFj6W/pexels-asad-photo-maldives-3601422.jpg",
+      "name": "Maldives",
+      "date": "2 days 3 nights",
+      "place": "San Francisco",
+      "price": 550,
+      "description": "Maldives, officially the Republic of Maldives, is an archipelagic country in the Indian subcontinent of Asia, situated in the Indian Ocean. It lies southwest of Sri Lanka and India, about 750 kilometres from the Asian continent's mainland."
+   },
+   {
+      "id": 5,
+      "image": "https://i.ibb.co/zf2Vb2w/pexels-jess-loiterton-4319881.jpg",
+      "name": "Hawaii",
+      "date": "2 days 3 nights",
+      "place": "Hawaii",
+      "price": 550,
+      "description": "Hawaii is a state in the Western United States located in the Pacific Ocean about 2,000 miles from the U.S. mainland. It is the only state outside North America, the only state that is an archipelago, and the only state in the tropics."
+   },
+   {
+      "id": 6,
+      "image": "https://i.ibb.co/rtJW55C/pexels-jeshootscom-442579.jpg",
+      "name": "Dubai",
+      "date": "2 days 3 nights",
+      "place": "Dubai",
+      "price": 550,
+      "description": "Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene. Burj Khalifa, an 830m-tall tower, dominates the skyscraper-filled skyline. At its foot lies Dubai Fountain, with jets and lights choreographed to music. On artificial islands just offshore is Atlantis, The Palm, a resort with water and marine-animal parks."
+   }
+]

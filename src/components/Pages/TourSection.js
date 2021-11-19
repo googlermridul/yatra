@@ -1,12 +1,12 @@
 import React from 'react';
-import useCampaigns from '../../hooks/useCampaigns';
-import Campaign from './Campaign';
+import useTours from '../../hooks/useTours';
+import Tour from './Tour';
 
-const CampaignSection = () => {
-   const [campaigns] = useCampaigns()
+const TourSection = () => {
+   const [tours] = useTours()
    
    return (
-      <div className="campaign-section">
+      <div className="tour-section">
          <div className="container">
             <div className="row">
                <div className="col">
@@ -18,9 +18,9 @@ const CampaignSection = () => {
             </div>
             <div className="row">
                {
-                  campaigns.slice(0, 3).map(campaign => <Campaign 
-                     campaign={campaign} 
-                     key={campaign.id} ></Campaign> )
+                  tours.slice(0, 6).map(tour => <Tour 
+                     tour={tour} 
+                     key={tour.id} ></Tour> )
                }
             </div>
          </div>
@@ -28,4 +28,4 @@ const CampaignSection = () => {
    );
 };
 
-export default CampaignSection;
+export default TourSection;

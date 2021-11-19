@@ -6,7 +6,7 @@ import NotFound from './components/Pages/NotFound';
 import Header from './components/Pages/Header';
 import Footer from './components/Pages/Footer';
 import AboutPage from './components/Pages/AboutPage';
-import CampaignDetails from './components/Pages/CampaignDetails';
+import TourDetails from './components/Pages/TourDetails';
 import Login from './components/Pages/Login';
 import AuthProvider from './contexts/AuthProvider';
 import Register from './components/Pages/Register';
@@ -27,8 +27,8 @@ function App() {
           <Route path="/about">
             <AboutPage />
           </Route>
-          <PrivateRoute path="/campaign/:campaignId">
-            <CampaignDetails />
+          <PrivateRoute path="/tour/:tourId">
+            <TourDetails />
           </PrivateRoute>
           <Route path="/login">
             <Login />
