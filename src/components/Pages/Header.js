@@ -8,7 +8,7 @@ const Header = () => {
    const {user, logOut} = useAuth()
 
    return (
-      <nav className="navbar navbar-expand-lg fixed-top shadow-sm">
+      <nav className="navbar navbar-expand-md fixed-top shadow-sm">
          <div className="container">
             <Link className="link" to="/home">
                <h2 className="logo"><img src={plane} alt="" /> Yatra</h2>

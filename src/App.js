@@ -11,6 +11,8 @@ import Login from './components/Pages/Login';
 import AuthProvider from './contexts/AuthProvider';
 import Register from './components/Pages/Register';
 import PrivateRoute from './components/Pages/PrivateRoute';
+import AddPackage from './components/Conceptual/AddPackage';
+import Packages from './components/Conceptual/Packages';
 
 function App() {
   return (
@@ -36,6 +38,14 @@ function App() {
           <Route path="/register">
             <Register />
           </Route>
+
+          <Route path="/addPackage">
+            <AddPackage />
+          </Route>
+          <Route path="/packages">
+            <Packages />
+          </Route>
+          
           <Route path="*">
             <NotFound />
           </Route>
