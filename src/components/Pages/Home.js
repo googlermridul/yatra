@@ -9,8 +9,8 @@ const Home = () => {
       <>
          <HomeBanner></HomeBanner>
          <Service></Service>
-         {/* <About></About> */}
          <TourSection></TourSection>
+         <About></About>
       </>
    );
 };

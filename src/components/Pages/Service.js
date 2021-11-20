@@ -2,6 +2,9 @@ import React from 'react';
 import rail from '../../images/train.png'
 import hotel from '../../images/slumber.png'
 import flight from '../../images/airplane.png'
+import ticket from '../../images/ticket.png'
+import cruise from '../../images/cruise.png'
+import home from '../../images/home.png'
 
 const Service = () => {
    return (
@@ -34,12 +37,39 @@ const Service = () => {
                      <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam.</p>
                   </div>
                </div>
-               <div className="col-lg-4 col-md-6 mx-auto">
+               <div className="col-lg-4 col-md-6">
                   <div className="service-box">
                      <div className="img-box">
                         <img src={flight} alt="" />
                      </div>
                      <h3>Flight Booking</h3>
+                     <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam.</p>
+                  </div>
+               </div>
+               <div className="col-lg-4 col-md-6">
+                  <div className="service-box">
+                     <div className="img-box">
+                        <img src={ticket} alt="" />
+                     </div>
+                     <h3>Ticket Booking</h3>
+                     <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam.</p>
+                  </div>
+               </div>
+               <div className="col-lg-4 col-md-6">
+                  <div className="service-box">
+                     <div className="img-box">
+                        <img src={cruise} alt="" />
+                     </div>
+                     <h3>Cruise Booking</h3>
+                     <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam.</p>
+                  </div>
+               </div>
+               <div className="col-lg-4 col-md-6">
+                  <div className="service-box">
+                     <div className="img-box">
+                        <img src={home} alt="" />
+                     </div>
+                     <h3>Amazing Tour</h3>
                      <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam.</p>
                   </div>
                </div>

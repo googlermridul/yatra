@@ -11,8 +11,9 @@ import Login from './components/Pages/Login';
 import AuthProvider from './contexts/AuthProvider';
 import Register from './components/Pages/Register';
 import PrivateRoute from './components/Pages/PrivateRoute';
-import AddPackage from './components/Conceptual/AddPackage';
-import Packages from './components/Conceptual/Packages';
+import AddPackage from './components/Pages/AddPackage';
+import MyPackages from './components/Pages/MyPackages';
+import ManagePackages from './components/Pages/ManagePackages';
 
 function App() {
   return (
@@ -42,8 +43,11 @@ function App() {
           <Route path="/addPackage">
             <AddPackage />
           </Route>
-          <Route path="/packages">
-            <Packages />
+          <Route path="/myPackages">
+            <MyPackages />
+          </Route>
+          <Route path="/manageBookings">
+            <ManagePackages />
           </Route>
           
           <Route path="*">

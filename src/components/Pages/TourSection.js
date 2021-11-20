@@ -18,9 +18,9 @@ const TourSection = () => {
             </div>
             <div className="row">
                {
-                  tours.slice(0, 6).map(tour => <Tour 
+                  tours.map(tour => <Tour 
                      tour={tour} 
-                     key={tour.id} ></Tour> )
+                     key={tour._id} ></Tour> )
                }
             </div>
          </div>

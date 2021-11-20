@@ -4,8 +4,20 @@ import hamburger from '../../images/menu.png'
 import plane from '../../images/paper-plane.png'
 import useAuth from '../../hooks/useAuth';
 
+import Button from '@mui/material/Button';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+
 const Header = () => {
    const {user, logOut} = useAuth()
+   const [anchorEl, setAnchorEl] = React.useState(null);
+   const open = Boolean(anchorEl);
+   const handleClick = (event) => {
+     setAnchorEl(event.currentTarget);
+   };
+   const handleClose = () => {
+     setAnchorEl(null);
+   };
 
    return (
       <nav className="navbar navbar-expand-md fixed-top shadow-sm">
@@ -25,18 +37,10 @@ const Header = () => {
                      <Link className="link" to="/about">About</Link>
                   </li>
                   <li className="nav-item">
-                     <Link className="link" to="/tours">Tours</Link>
+                     <Link className="link" to="/myPackages">My Packages</Link>
                   </li>
                   <li className="nav-item">
-                     <Link className="link" to="/events">Events</Link>
-                  </li>
-
-                  <li className="nav-item">
-                     {
-                        user.email ? 
-                        <button className="link" onClick={logOut}>Logout</button> : 
-                        <Link className="link" to="/login">Login</Link>
-                     }
+                     <Link className="link" to="/contact">Contact</Link>
                   </li>
                   {/* <li className="nav-item">
                      {
@@ -45,7 +49,44 @@ const Header = () => {
                   </li> */}
                </ul>
                <span className="navbar-text">
-                  <button className="btn-yatra green">Donate</button>
+                  {
+                     user.email ? 
+                     <>
+                        <Button
+                           className="btn-yatra green mui-green"
+                           id="basic-button"
+                           aria-controls="basic-menu"
+                           aria-haspopup="true"
+                           aria-expanded={open ? 'true' : undefined}
+                           onClick={handleClick}
+                           >
+                           Dashboard
+                        </Button>
+                        <Menu
+                           id="basic-menu"
+                           anchorEl={anchorEl}
+                           open={open}
+                           onClose={handleClose}
+                           MenuListProps={{
+                              'aria-labelledby': 'basic-button',
+                           }}
+                           >
+                           <MenuItem className="link">
+                              {user.email && <span className="name">{user.displayName}</span>}
+                           </MenuItem>
+                           <MenuItem>
+                              <Link className="link" to="/addPackage">Add Package</Link>
+                           </MenuItem>
+                           <MenuItem>
+                              <Link className="link" to="/manageBookings">Manage All Bookings</Link>
+                           </MenuItem>
+                           <MenuItem className="link" onClick={logOut}>Logout</MenuItem>
+                        </Menu>
+                     </> :
+                     <Link className="link" to="/login">
+                        <button className="btn-yatra green">Login</button>
+                     </Link>
+                  }
                </span>
             </div>
          </div>
