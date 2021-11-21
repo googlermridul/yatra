@@ -12,7 +12,7 @@ const TourSection = () => {
                <div className="col">
                   <div className="header-text">
                      <h2>FEATURED TOURS</h2>
-                     <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam <br /> Sorem ipsum dolor consectur adipisicing elit.</p>
+                     <p className="mb-0">Safe traveling, your security, and your enjoyment are our focus during your travels.</p>
                   </div>
                </div>
             </div>

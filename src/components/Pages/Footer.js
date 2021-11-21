@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="row">
                <div className="col-sm-6 col-lg-3 pe-sm-5">
                   <h2 className="logo"><img src={plane} alt="" /> Yatra</h2>
-                  <p>Doctery is a health care center which provide patient treatment with specialized medical and nursing staff and medical equipment.</p>
+                  <p>Yatra is a trusted and reliable tour and travel agency among all the leading and updated tour-operating services in Bangladesh.</p>
                </div>
                <div className="col-sm-6 col-lg-3">
                   <h4>Useful Links</h4>
@@ -48,7 +48,7 @@ const Footer = () => {
                   <h4>Contact Us</h4>
                   <div className="d-flex">
                      <FontAwesomeIcon className="fa-icon" icon={faMapMarkerAlt} />
-                     <p>329 Queensberry Street, North Melbourne VIC 3051, Australia.</p>
+                     <p>Mirpur 10 Roundabout, Mirpur, Dhaka Division, Bangladesh.</p>
                   </div>
                   <div className="d-flex align-items-top">
                      <FontAwesomeIcon className="fa-icon" icon={faPhoneAlt} />

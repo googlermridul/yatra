@@ -7,7 +7,9 @@ const BookPackage = ({tour}) => {
 
    const { register, handleSubmit, reset, formState: { errors } } = useForm();
    const onSubmit = data => {
-      data.status = "pending"
+      data.status = "Pending"
+      data.image = tour.image;
+      data.packageName = tour.name;
 
       fetch(`http://localhost:5000/addBooking`, {
          method: 'POST',
@@ -30,10 +32,6 @@ const BookPackage = ({tour}) => {
             <form onSubmit={handleSubmit(onSubmit)} className="mb-0 text-start">
                <div className="row">
                   <div className="form-group col-12">
-                     <input className="form-control shadow-sm" defaultValue={tour.name} {...register("packageName", { required: true })} placeholder="Package Name" />
-                     {errors.packageName && <span className="error">package name is required</span>}
-                  </div>
-                  <div className="form-group col-12">
                      <input className="form-control shadow-sm" defaultValue={user.displayName} {...register("name", { required: true })} placeholder="Username" />
                      {errors.name && <span className="error">name is required</span>}
                   </div>
@@ -44,6 +42,10 @@ const BookPackage = ({tour}) => {
                   <div className="form-group col-12">
                      <input className="form-control shadow-sm" defaultValue="" {...register("phone", { required: true })} placeholder="Phone" />
                      {errors.phone && <span className="error">phone is required</span>}
+                  </div>
+                  <div className="form-group col-12">
+                     <input className="form-control shadow-sm" defaultValue="" {...register("address", { required: true })} placeholder="address" />
+                     {errors.address && <span className="error">address is required</span>}
                   </div>
                   <div className="form-group col-12">
                      <input className="form-control shadow-sm" defaultValue="" {...register("date", { required: true })} placeholder="Date" type="date" />

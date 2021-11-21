@@ -15,7 +15,7 @@ const TourDetails = () => {
          const matchedData = tours.find(detail => detail._id === tourId)
          setDetails(matchedData);
       }
-   }, [tours])
+   }, [tourId])
 
    const {image, name, date, description} = details;
 

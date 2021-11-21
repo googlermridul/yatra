@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import hamburger from '../../images/menu.png'
 import plane from '../../images/paper-plane.png'
 import useAuth from '../../hooks/useAuth';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faThLarge, faThList , faSignOutAlt, faUser } from '@fortawesome/free-solid-svg-icons'
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -13,14 +14,14 @@ const Header = () => {
    const [anchorEl, setAnchorEl] = React.useState(null);
    const open = Boolean(anchorEl);
    const handleClick = (event) => {
-     setAnchorEl(event.currentTarget);
+      setAnchorEl(event.currentTarget);
    };
    const handleClose = () => {
-     setAnchorEl(null);
+      setAnchorEl(null);
    };
 
    return (
-      <nav className="navbar navbar-expand-md fixed-top shadow-sm">
+      <nav className="navbar navbar-expand-lg fixed-top shadow-sm">
          <div className="container">
             <Link className="link" to="/home">
                <h2 className="logo"><img src={plane} alt="" /> Yatra</h2>
@@ -42,11 +43,6 @@ const Header = () => {
                   <li className="nav-item">
                      <Link className="link" to="/contact">Contact</Link>
                   </li>
-                  {/* <li className="nav-item">
-                     {
-                        user.email && <span className="name">{user.displayName}</span>
-                     }
-                  </li> */}
                </ul>
                <span className="navbar-text">
                   {
@@ -72,15 +68,19 @@ const Header = () => {
                            }}
                            >
                            <MenuItem className="link">
-                              {user.email && <span className="name">{user.displayName}</span>}
+                              <FontAwesomeIcon className="fa-icon" icon={faUser} />{user.email && <span className="name">{user.displayName}</span>}
                            </MenuItem>
-                           <MenuItem>
-                              <Link className="link" to="/addPackage">Add Package</Link>
+                           <MenuItem className="link">
+                              <Link className="link" to="/addPackage">
+                                 <FontAwesomeIcon className="fa-icon" icon={faThLarge} />Add Package
+                              </Link>
                            </MenuItem>
-                           <MenuItem>
-                              <Link className="link" to="/manageBookings">Manage All Bookings</Link>
+                           <MenuItem className="link">
+                              <Link className="link" to="/manageBookings">
+                                 <FontAwesomeIcon className="fa-icon" icon={faThList} />Manage All Bookings
+                              </Link>
                            </MenuItem>
-                           <MenuItem className="link" onClick={logOut}>Logout</MenuItem>
+                           <MenuItem className="link" onClick={logOut}><FontAwesomeIcon className="fa-icon" icon={faSignOutAlt} />Logout</MenuItem>
                         </Menu>
                      </> :
                      <Link className="link" to="/login">

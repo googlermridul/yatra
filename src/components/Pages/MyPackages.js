@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import useAuth from '../../hooks/useAuth';
-// import useMyPackages from '../../hooks/useMyPackages';
 
 const MyPackages = () => {
    const {user} = useAuth()
@@ -21,7 +20,7 @@ const MyPackages = () => {
          .then(res => res.json())
          .then(data => {
             if (data.deletedCount) {
-               const remaining = packages.filter(pd => pd._id !== id)
+               const remaining = packages.filter(pk => pk._id !== id)
                setPackages(remaining)
             }
          })
@@ -29,36 +28,31 @@ const MyPackages = () => {
    }
 
    return (
-      <div className="tour-section">
+      <div className="my-package-section">
          <div className="container">
-            <div className="row">
-               <div className="col">
-                  <div className="header-text">
-                     <h2>MY PACKAGES</h2>
-                     <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam <br /> Sorem ipsum dolor consectur adipisicing elit.</p>
-                  </div>
-               </div>
-            </div>
-            <div className="row">
-               {
-                  packages.map(pk => (                  
-                     <div key={pk._id} className="col-lg-4 col-md-6">
-                     <div className="tour-box">
-                        <div className="img-box">
-                           {/* <img src={image} className="img-fluid" alt="" /> */}
-                        </div>
-                        <div className="info">
-                           <h3>{pk.packageName}</h3>
-                           <small>{pk.status}</small>
-                           <p>{pk.email}</p>
-                           <div className="bottom">
-                              <h3 className="price"><span className="date">{pk.date}</span></h3>
-                              <button onClick={() => handleDelete(pk._id)} className="btn-yatra green">Cancel</button>
+            <div className="package-section-box">
+               <h2>My Packages</h2>
+               <div className="row">
+                  {
+                     packages.map(pk => (                  
+                        <div key={pk._id} className="col-lg-6">
+                        <div className="package-box">
+                           <div className="img-box">
+                              <img src={pk.image} className="img-fluid" alt="" />
+                           </div>
+                           <div className="info">
+                              <h3 className="package">{pk.packageName}</h3>
+                              <span className="status">{pk.status}</span>
+                              <p>{pk.email}</p>
+                              <div className="bottom">
+                                 <span className="date">{pk.date}</span>
+                                 <button onClick={() => handleDelete(pk._id)} className="btn-yatra green">Cancel</button>
+                              </div>
                            </div>
                         </div>
-                     </div>
-                  </div>))
-               }
+                     </div>))
+                  }
+               </div>
             </div>
          </div>
       </div>

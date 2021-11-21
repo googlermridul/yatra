@@ -41,30 +41,28 @@ const Register = () => {
 
    return (
       <div className="login">
-         <div className="login-bg">
-            <div className="container">
-               <div className="row">
-                  <div className="col">
-                     <div className="login-box shadow">
-                        <h3>Sign in to Yatra</h3>
-                        <form onSubmit={handleRegistration}>
-                           <div className="form-group">
-                              <input onBlur={getName} type="name" className="form-control shadow-sm" placeholder="Full Name" required />
-                           </div>
-                           <div className="form-group">
-                              <input onBlur={getEmail} type="email" className="form-control shadow-sm" placeholder="Email" required />
-                           </div>
-                           <div className="form-group">
-                              <input onBlur={getPassword} type="password" className="form-control shadow-sm" id="password"  placeholder="Password" required />
-                           </div>
-                           <button type="submit" className="btn-yatra shadow-sm">Submit</button>
-                        </form>
-                        <hr />
-                        <div className="text-center">
-                           <p className="text-danger">{error}</p>
-                           <button onClick={handleGoogleSignIn} className="btn-yatra google-btn shadow-sm"><img src={googleIcon} alt="" /> Signin With Google</button>
-                           <p className="switcher">Already an user? <Link className="link" to="/login">Login</Link></p>
+         <div className="container">
+            <div className="row">
+               <div className="col">
+                  <div className="login-box shadow">
+                     <h3>Sign in to Yatra</h3>
+                     <form onSubmit={handleRegistration}>
+                        <div className="form-group">
+                           <input onBlur={getName} type="name" className="form-control shadow-sm" placeholder="Full Name" required />
                         </div>
+                        <div className="form-group">
+                           <input onBlur={getEmail} type="email" className="form-control shadow-sm" placeholder="Email" required />
+                        </div>
+                        <div className="form-group">
+                           <input onBlur={getPassword} type="password" className="form-control shadow-sm" id="password"  placeholder="Password" required />
+                        </div>
+                        <button type="submit" className="btn-yatra shadow-sm">Submit</button>
+                     </form>
+                     <hr />
+                     <div className="text-center">
+                        <p className="firebase-error">{error}</p>
+                        <button onClick={handleGoogleSignIn} className="btn-yatra google-btn shadow-sm"><img src={googleIcon} alt="" /> Signin With Google</button>
+                        <p className="switcher">Already an user? <Link className="link" to="/login">Login</Link></p>
                      </div>
                   </div>
                </div>

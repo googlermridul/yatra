@@ -42,6 +42,7 @@ h4 {
   width: 120px;
   height: 50px;
 }
+
 .mui-green {
   color: #fff !important;
   font-size: 16px !important;
@@ -61,6 +62,11 @@ h4 {
   font-size: 16px !important;
   font-family: 'Poppins', sans-serif !important;
 }
+#basic-menu .link .fa-icon {
+  color: #6abe45 !important;
+  width: 20px;
+  margin-right: 5px;
+}
 
 .text-box p {
   margin: 30px 0;
@@ -73,7 +79,7 @@ h4 {
   margin-top: 15px;
 }
 
-/* HEADER */
+/* -------------------- HEADER START -------------------- */
 .navbar {
   background: #fff;
   padding: 15px 0 !important;
@@ -112,8 +118,10 @@ h4 {
   background: none;
   border: none;
 }
+/* -------------------- HEADER END -------------------- */
 
-/* HOME BANNER */
+
+/* -------------------- HOME BANNER START -------------------- */
 .home-banner {
   margin-top: 97px;
   margin-bottom: 100px;
@@ -123,8 +131,10 @@ h4 {
   background-repeat: no-repeat;
   background-position: center top;
 }
+/* -------------------- HOME BANNER END -------------------- */
 
-/* SERVICE */
+
+/* -------------------- SERVICE SECTION START -------------------- */
 .service {
   margin-bottom: 70px;
 }
@@ -149,22 +159,24 @@ h4 {
 .service-box h3 {
   margin-bottom: 15px;
 }
+/* -------------------- SERVICE SECTION END -------------------- */
 
-/* ABOUT */
+
+/* -------------------- ABOUT SECTION START-------------------- */
 .about {
   margin-bottom: 100px;
   background: #fff;
 }
-
-/* ABOUT PAGE */
 .about-page {
   margin-top: 100px;
   padding: 100px 0;
 }
+/* -------------------- ABOUT SECTION END-------------------- */
 
-/* tour SECTION */
+
+/* -------------------- TOUR SECTION START -------------------- */
 .tour-section {
-  background: #f9faff;
+  background: #ecf7f3;
   padding-top: 100px;
   padding-bottom: 85px;
   margin-bottom: 100px;
@@ -199,19 +211,14 @@ h4 {
   justify-content: space-between;
   align-items: center;
 }
-
 .tour-details {
   margin-top: 100px;
   padding: 100px 0;
 }
-
-
 .tour-details .description {
   margin: 15px 0;
-  /* font-size: 18px; */
 }
 .tour-details .date-place {
-  color: #f77d5c;
   margin: 15px 0;
 }
 .tour-details .fa-icon {
@@ -220,77 +227,135 @@ h4 {
 .tour-details .btn-yatra {
   margin-top: 15px;
 }
-
-/* FOOTER */
-.footer {
-  padding: 100px 0;
-  background: #f5fdff;
-}
-.footer .logo {
-  color: #6abe45;
-  font-size: 32px;
-  margin-bottom: 30px;
-  font-family: 'Dancing Script', cursive !important;
-}
-.footer .logo img {
-  width: 32px;
-}
-.footer h4 {
-  margin-top: 15px;
-  margin-bottom: 35px;
-}
-.footer .nav-item {
-  margin-bottom: 10px;
-}
-.footer .link {
-  margin-bottom: 25px;
-  color: #666;
-  transition: .4s;
-}
-.footer .link:hover {
-  color: #6abe45;
-}
-.footer .fa-icon {
-  color: #333;
-  width: 15px;
-  margin-right: 10px;
-  margin-top: 3px;
-}
+/* -------------------- TOUR SECTION END -------------------- */
 
 
-/* not found */
-.not-found {
-  margin-top: 200px;
-  margin-bottom: 100px;
+/* -------------------- MY PACKAGE SECTION START -------------------- */
+.my-package-section {
+  background: #ecf7f3;
+  padding-top: 200px;
+  padding-bottom: 85px;
 }
-.not-found img {
-  margin-bottom: 50px;
-  width: 500px;
+.package-section-box h2 {
+  margin-bottom: 15px;
 }
-.not-found h3 {
-  margin-bottom: 30px;
+.package-section-box {
+  margin: auto;
+  min-height: 262px;
 }
-.not-found .link {
-  color: #6abe45;
-}
-
-
-
-
-/* login & register */
-.login {
+.package-box {
   background: #fff;
-}
-.login-bg {
-  padding: 200px 0 100px 0;
+  margin: 15px 0;
+  display: flex;
+  border-radius: 10px;
   overflow: hidden;
+}
+.package-box .img-box {
+  width: 30%;
+}
+.package-box .img-box img {
+  height: 100%;
+}
+.package-box .info {
+  padding: 30px;
+  position: relative;
+  width: 70%;
+}
+.package-box .date {
+  font-size: 14px;
+  color: #666;
+  font-weight: normal;
+}
+.package-box .status {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 14px;
+  background: #ddffcc;
+  padding: 5px 20px;
+  border-radius: 100px;
+  margin-bottom: 15px;
+}
+.package-box .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* -------------------- MY PACKAGE SECTION END -------------------- */
+
+
+/* -------------------- MANAGE PACKAGES START -------------------- */
+.manage-package {
+  background: #ecf7f3;
+  padding: 200px 0 100px 0;
+}
+.manage-package .manage-package-box h3 {
+  margin-bottom: 30px;
+}
+.manage-package .manage-package-box {
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: auto;
+}
+.manage-package .table {
+  caption-side: bottom;
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+.manage-package .table tbody {
+  border-top: 0px;
+  position: relative;
+  top: 10px;
+}
+.manage-package thead {
+  background: #ecf7f3;
+}
+.manage-package thead th {
+  color: #666;
+  font-weight: 600;
+  padding: 1rem .5rem;
+  border: none;
+}
+.manage-package td {
+  border: none;
+  color: #666;
+  padding: .8rem .5rem !important;
+}
+.manage-package td .btn-yatra {
+  font-size: 14px;
+  width: 100px;
+  height: 35px;
+}
+.manage-package thead th:first-child {
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+  overflow: hidden;
+}
+.manage-package thead th:first-child,
+.manage-package tbody td:first-child {
+  padding-left: 20px !important;
+}
+.manage-package thead th:last-child {
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
+  overflow: hidden;
+}
+/* -------------------- MANAGE PACKAGES END -------------------- */
+
+
+/* -------------------- LOGIN AND REGISTRATION START -------------------- */
+.login {
+  background: #ecf7f3;
+  padding: 200px 0 100px 0;
 }
 .login .login-box h3 {
   margin-bottom: 30px;
 }
 .login .login-box {
   padding: 30px;
-  background: #fefefe;
+  background: #fff;
   border-radius: 10px;
   max-width: 500px;
   margin: auto;
@@ -311,11 +376,15 @@ h4 {
   border-radius: 5px;
   padding: 20px;
   color: #666;
+  border: 1px solid #eee;
 }
 .login .login-box .form-control:focus {
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  box-shadow: 0 0rem 0rem rgba(0,0,0,.15)!important;
+  border: 1px solid #6abe45;
 }
-
+.form-control.shadow-sm {
+  box-shadow: 0 0rem 0rem rgba(0,0,0,.15)!important;
+}
 .login .login-box .btn-yatra {
   width: 100%;
 }
@@ -331,7 +400,6 @@ h4 {
 .login .login-box .google-btn:hover {
   color: #666;
 }
-
 .login .login-box .google-btn {
   margin-bottom: 15px;
   background: #fff !important;
@@ -345,13 +413,30 @@ h4 {
   margin-top: 15px;
 }
 .login .login-box .switcher .link {
-  color: #6faf9f;
+  color: #6abe45;
+}
+.firebase-error {
+  color: #f77d5c;
+  font-size: 14px;
+}
+.login-box .error {
+  font-size: 14px;
+  padding-top: 5px;
+  padding-left: 5px;
+  color: #f77d5c;
+  font-weight: normal;
 }
 input::placeholder {
   color: #999 !important;
 }
+.book-package {
+  padding: 0;
+  background: #fff;
+}
+/* -------------------- LOGIN AND REGISTRATION END -------------------- */
 
 
+/* -------------------- ADD PACKAGE PAGE START -------------------- */
 .add-package .login-box {
   max-width: 1000px;
 }
@@ -362,15 +447,73 @@ input::placeholder {
   margin-top: 30px;
   width: 50%;
 }
-.login-box .error {
-  font-size: 14px;
-  padding-top: 5px;
-  padding-left: 5px;
-  color: #6abe45;
-  font-weight: normal;
+.add-package .login-box .form-control {
+  border-radius: 30px;
 }
+/* -------------------- ADD PACKAGE PAGE END -------------------- */
 
-/* MEDIA QUERIES */
+
+/* -------------------- FOOTER SECTION START -------------------- */
+.footer {
+  padding: 100px 0;
+  background: #0e0e10;
+}
+.footer .logo {
+  color: #6abe45;
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-family: 'Dancing Script', cursive !important;
+}
+.footer .logo img {
+  width: 32px;
+}
+.footer p {
+  color: #999;
+}
+.footer h4 {
+  color: #fff;
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+.footer .nav-item {
+  margin-bottom: 10px;
+}
+.footer .link {
+  margin-bottom: 25px;
+  color: #999;
+  transition: .4s;
+}
+.footer .link:hover {
+  color: #6abe45;
+}
+.footer .fa-icon {
+  color: #999;
+  width: 15px;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+/* -------------------- FOOTER SECTION END -------------------- */
+
+
+/* -------------------- NOT FOUND PAGE START -------------------- */
+.not-found {
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+.not-found img {
+  margin-bottom: 50px;
+  width: 500px;
+}
+.not-found h3 {
+  margin-bottom: 30px;
+}
+.not-found .link {
+  color: #6abe45;
+}
+/* -------------------- NOT FOUND PAGE END -------------------- */
+
+
+/* -------------------- RESPONSIVE MEDIA QUERIES -------------------- */
 @media (max-width: 992px) {
   .navbar .navbar-nav .nav-item {
     text-align: center;
@@ -384,11 +527,7 @@ input::placeholder {
   }
   .home-banner {
     margin-top: 83px;
+    padding: 150px 0;
+    background-position: center left;
   }
-}
-
-
-.my-100 {
-  margin-top: 200px;
-  margin-bottom: 100px;
 }

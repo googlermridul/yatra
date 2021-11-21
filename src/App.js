@@ -33,23 +33,21 @@ function App() {
           <PrivateRoute path="/tour/:tourId">
             <TourDetails />
           </PrivateRoute>
+          <PrivateRoute path="/addPackage">
+            <AddPackage />
+          </PrivateRoute>
+          <PrivateRoute path="/myPackages">
+            <MyPackages />
+          </PrivateRoute>
+          <PrivateRoute path="/manageBookings">
+            <ManagePackages />
+          </PrivateRoute>
           <Route path="/login">
             <Login />
           </Route>
           <Route path="/register">
             <Register />
           </Route>
-
-          <Route path="/addPackage">
-            <AddPackage />
-          </Route>
-          <Route path="/myPackages">
-            <MyPackages />
-          </Route>
-          <Route path="/manageBookings">
-            <ManagePackages />
-          </Route>
-          
           <Route path="*">
             <NotFound />
           </Route>
