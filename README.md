@@ -19,4 +19,4 @@ Yatra is a tour package provider website. Here you will find packages to travel 
 
 ### Project Screenshot:
 
-<img src="https://i.ibb.co/RHB2Sjn/screencapture-localhost-3000-home-2021-11-21-17-47-56.png" alt="yatra googlermridul" border="0"># tourism-or-delivery-website-server-side-googlermridul
+<img src="https://i.ibb.co/RHB2Sjn/screencapture-localhost-3000-home-2021-11-21-17-47-56.png" alt="yatra googlermridul" border="0">
