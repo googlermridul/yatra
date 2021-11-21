@@ -18,13 +18,9 @@ const TourSection = () => {
             </div>
             <div className="row">
                {
-                  tours.length ?
                   tours.map(tour => <Tour 
                      tour={tour} 
-                     key={tour._id} ></Tour> ) :
-                  <div class="d-flex justify-content-center">
-                     <div class="spinner-border" role="status"></div>
-                  </div>
+                     key={tour._id} ></Tour> )
                }
             </div>
          </div>

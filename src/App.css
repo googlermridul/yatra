@@ -72,6 +72,12 @@ h4 {
   border: 0.25em solid #6abe45 !important;
   border-right-color: transparent !important;
 }
+.pre-loader {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .text-box p {
   margin: 30px 0;
 }
