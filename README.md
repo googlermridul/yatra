@@ -2,16 +2,20 @@
 
 ### Live Link: https://yatramein.web.app/
 
-### What Yatra Provides:
-Yatra is a trusted and reliable tour and travel agency among all the leading and updated tour-operating services in Bangladesh. We are here to bring the luxury to your traveling. Yatra is a proud member of Association of Travel Agents of Bangladesh-ATAB and Tour Operators Association of Bangladesh.
+### What is Yatra:
+Yatra is a tour package provider website. Here you will find packages to travel anywhere in the country or abroad. Yatra is a trusted and reliable tour and travel agency among all the leading and updated tour-operating services in Bangladesh. We are here to bring the luxury to your traveling.
 
 ### About this prjoect:
 
-* Doctery is a health care related website.
-* This site is made by react with firebase authentication system.
-* Here you will find all kinds of medical services in the service section.
-* You can expolre hospital services but you should create an account here.
-* You can make an appointment in advance for medical services.
+* Exclusive ackages to travel anywhere in the country or abroad.
+* People can book their tour package here.
+* They also can cancel their package.
+* Admin can add new tour package.
+* Admin can control people booked packages.
+
+### Languages & Tools:
+#### react, firebase, nodejs, mongodb, react-bootstrap, material-ui
+
 
 ### Project Screenshot:
 
