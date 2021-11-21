@@ -24,6 +24,22 @@ const ManagePackages = () => {
       console.log(id);
    }
 
+   const handleDelete = id => {
+      const proceed = window.confirm('Are you sure you want to delete')
+      if (proceed) {
+         fetch(`http://localhost:5000/deleteBooking/${id}`, {
+            method: 'DELETE'
+         })
+         .then(res => res.json())
+         .then(data => {
+            if (data.deletedCount) {
+               const remaining = packages.filter(pk => pk._id !== id)
+               setPackages(remaining)
+            }
+         })
+      }
+   }
+
    return (
       <div className="manage-package">
          <div className="container">
@@ -48,9 +64,15 @@ const ManagePackages = () => {
                                     <td>{pk.packageName}</td>
                                     <td>{pk.name}</td>
                                     <td>{pk.date}</td>
-                                    <td>{pk.status}</td>
                                     <td>
-                                       <button onClick={() => handleUpdate(pk._id)} className="btn-yatra green">Approve</button>
+                                       {
+                                          pk.status === 'Pending' ?
+                                             <button onClick={() => handleUpdate(pk._id)} className="btn-yatra green">Approve</button> :
+                                             <button className="btn-yatra approved" disabled>Approved</button>
+                                       }
+                                    </td>
+                                    <td>
+                                       <button onClick={() => handleDelete(pk._id)} className="btn-yatra delete">Delete</button>
                                     </td>
                                  </tr>
                               ))

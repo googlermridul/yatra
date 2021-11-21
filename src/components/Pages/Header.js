@@ -38,7 +38,9 @@ const Header = () => {
                      <Link className="link" to="/about">About</Link>
                   </li>
                   <li className="nav-item">
-                     <Link className="link" to="/myPackages">My Packages</Link>
+                     {
+                        user.email && <Link className="link" to="/myPackages">My Packages</Link>
+                     }
                   </li>
                   <li className="nav-item">
                      <Link className="link" to="/contact">Contact</Link>

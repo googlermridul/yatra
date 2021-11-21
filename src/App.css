@@ -271,10 +271,13 @@ h4 {
   top: 30px;
   right: 30px;
   font-size: 14px;
-  background: #ddffcc;
+  background: #ecf7f3;
   padding: 5px 20px;
   border-radius: 100px;
   margin-bottom: 15px;
+}
+.package-box .pending {
+  background: #f77e5c33;
 }
 .package-box .bottom {
   display: flex;
@@ -327,6 +330,23 @@ h4 {
   font-size: 14px;
   width: 100px;
   height: 35px;
+}
+.manage-package td .approved {
+  background: #ecf7f3;
+  border: 2px solid #ecf7f3;
+  color: #666;
+}
+.manage-package td .approved:hover {
+  background: #ecf7f3 !important;
+  border: 2px solid #ecf7f3 !important;
+  color: #666 !important;
+}
+.manage-package td .delete {
+  background: #f77d5c;
+  border: 2px solid #f77d5c;
+}
+.manage-package td .delete:hover {
+  color: #f77d5c !important;
 }
 .manage-package thead th:first-child {
   border-bottom-left-radius: 100px;

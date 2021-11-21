@@ -42,7 +42,7 @@ const MyPackages = () => {
                            </div>
                            <div className="info">
                               <h3 className="package">{pk.packageName}</h3>
-                              <span className="status">{pk.status}</span>
+                              <span className={ pk.status === "Pending" ? 'status pending' : 'status approved' }>{pk.status}</span>
                               <p>{pk.email}</p>
                               <div className="bottom">
                                  <span className="date">{pk.date}</span>
