@@ -6,7 +6,7 @@ const MyPackages = () => {
    const [packages, setPackages] = useState([])
 
    useEffect(() => {
-      fetch(`http://localhost:5000/bookings/${user.email}`)
+      fetch(`https://tranquil-atoll-29388.herokuapp.com/bookings/${user.email}`)
       .then(res => res.json())
       .then(data => setPackages(data))
    }, [user])
@@ -14,7 +14,7 @@ const MyPackages = () => {
    const handleDelete = id => {
       const proceed = window.confirm('Are you sure you want to delete')
       if (proceed) {
-         fetch(`http://localhost:5000/deleteBooking/${id}`, {
+         fetch(`https://tranquil-atoll-29388.herokuapp.com/deleteBooking/${id}`, {
             method: 'DELETE'
          })
          .then(res => res.json())

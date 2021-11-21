@@ -4,13 +4,13 @@ const ManagePackages = () => {
    const [packages, setPackages] = useState([])
 
    useEffect(() => {
-      fetch('http://localhost:5000/bookings')
+      fetch('https://tranquil-atoll-29388.herokuapp.com/bookings')
       .then(res => res.json())
       .then(data => setPackages(data))
    }, [packages])
 
    const handleUpdate = id => {
-      fetch(`http://localhost:5000/bookings/${id}`, {
+      fetch(`https://tranquil-atoll-29388.herokuapp.com/bookings/${id}`, {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json'},
           body: JSON.stringify(packages)
@@ -27,7 +27,7 @@ const ManagePackages = () => {
    const handleDelete = id => {
       const proceed = window.confirm('Are you sure you want to delete')
       if (proceed) {
-         fetch(`http://localhost:5000/deleteBooking/${id}`, {
+         fetch(`https://tranquil-atoll-29388.herokuapp.com/deleteBooking/${id}`, {
             method: 'DELETE'
          })
          .then(res => res.json())
