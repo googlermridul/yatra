@@ -12,7 +12,7 @@ const AddPackage = () => {
       })
       .then(res => res.json())
       .then(result => {
-         console.log(result);
+         // console.log(result);
          if (result.insertedId) {
             alert('Package added successfully')
             reset()

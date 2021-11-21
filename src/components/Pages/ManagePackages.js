@@ -21,7 +21,6 @@ const ManagePackages = () => {
               alert('Approved successfully')
           }
       })
-      console.log(id);
    }
 
    const handleDelete = id => {
